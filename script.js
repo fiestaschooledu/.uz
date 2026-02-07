@@ -55,15 +55,19 @@ const track = document.getElementById("slidesTrack");
 if(track){
   const speed = window.innerWidth < 768 ? 2.5 : 1.5;
 
-  function autoScroll(){
-    track.scrollLeft += speed;
+function autoScroll(){
+  track.scrollTo({
+    left: track.scrollLeft + speed,
+    behavior: "auto"
+  });
 
-    if(track.scrollLeft >= track.scrollWidth / 2){
-      track.scrollLeft = 0;
-    }
-
-    requestAnimationFrame(autoScroll);
+  if(track.scrollLeft >= track.scrollWidth / 2){
+    track.scrollLeft = 0;
   }
+
+  requestAnimationFrame(autoScroll);
+}
+
 
   autoScroll();
 }
@@ -156,9 +160,6 @@ counters.forEach(c => counterObserver.observe(c));
 
 
 function toggleMenu(){
-  document.getElementById('navLinks').classList.toggle('show');
-}
-function toggleMenu(){
   const nav = document.getElementById('navLinks');
   nav.classList.toggle('show');
 }
@@ -168,6 +169,7 @@ document.querySelectorAll('#navLinks a').forEach(link=>{
     document.getElementById('navLinks').classList.remove('show');
   });
 });
+
 
 
 

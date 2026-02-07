@@ -271,16 +271,19 @@ footer{
   margin-top:20px;
 }
 
-.slides{
+
+ .slides{
   display:flex;
   gap:16px;
   overflow-x:auto;
   scroll-behavior:smooth;
 
-   -webkit-overflow-scrolling: auto;
-  scroll-snap-type: none;
-   will-change: scroll-position;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  white-space: nowrap;
 }
+
+
 
 .slides::-webkit-scrollbar{
   display:none;
@@ -1098,6 +1101,7 @@ a.btn-outline:visited {
   }
 
 }
+
 
 
 

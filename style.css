@@ -171,7 +171,6 @@ footer{
 @media(max-width:900px){
   .hero-grid{grid-template-columns:1fr}
   .grid-3{grid-template-columns:1fr}
-  .nav-links{display:none}
 }
 
 .course-list{
@@ -1101,6 +1100,7 @@ a.btn-outline:visited {
   }
 
 }
+
 
 
 

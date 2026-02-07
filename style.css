@@ -887,3 +887,92 @@ a.btn-outline:visited {
   }
 
 }
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+
+  .container {
+    width: 92%;
+  }
+
+  /* NAVBAR */
+  .nav-inner {
+    padding: 10px 0;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 12px;
+  }
+
+  /* HERO */
+  .hero {
+    padding-top: 110px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FORM */
+  .hero-card {
+    padding: 18px;
+  }
+
+  /* TEACHERS */
+  .teacher img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* COURSE CARDS */
+  .card {
+    padding: 18px;
+  }
+
+  .course-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FLOAT BUTTONS */
+  #topBtn {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .wa-float {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+

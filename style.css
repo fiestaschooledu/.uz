@@ -798,3 +798,92 @@ a.btn-outline:visited {
 .feedback-user + .feedback-user {
   margin-top: 14px;
 }
+
+
+
+
+@media (max-width: 992px) {
+
+  .grid-3,
+  .features-grid,
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-grid,
+  .about-grid,
+  .video-preview-grid,
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  nav .btn-primary {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .grid-3,
+  .features-grid,
+  .counters-grid,
+  .prices-grid,
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .card,
+  .price-card,
+  .feedback-card {
+    padding: 18px;
+  }
+
+  .teacher img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .nav-links {
+    display: none; /* меню скрывается */
+  }
+
+  nav .logo span {
+    font-size: 16px;
+  }
+
+  nav .btn-primary {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .wa-float {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+}

@@ -867,10 +867,6 @@ a.btn-outline:visited {
     text-align: center;
   }
 
-  nav .nav-links {
-    display: none; /* меню скрывается */
-  }
-
   nav .logo span {
     font-size: 16px;
   }
@@ -1086,6 +1082,7 @@ a.btn-outline:visited {
   }
 
 }
+
 
 
 

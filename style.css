@@ -894,7 +894,7 @@ a.btn-outline:visited {
   flex-wrap: wrap;
 }
 
-/* ================= MOBILE ================= */
+
 @media (max-width: 600px) {
 
   .container {
@@ -916,7 +916,7 @@ a.btn-outline:visited {
     border-radius: 12px;
   }
 
-  /* HERO */
+
   .hero {
     padding-top: 110px;
   }
@@ -940,7 +940,7 @@ a.btn-outline:visited {
     text-align: center;
   }
 
-  /* FORM */
+
   .hero-card {
     padding: 18px;
   }
@@ -951,7 +951,6 @@ a.btn-outline:visited {
     height: 70px;
   }
 
-  /* COURSE CARDS */
   .card {
     padding: 18px;
   }
@@ -961,7 +960,7 @@ a.btn-outline:visited {
     text-align: center;
   }
 
-  /* FLOAT BUTTONS */
+  
   #topBtn {
     width: 38px;
     height: 38px;
@@ -1025,6 +1024,33 @@ a.btn-outline:visited {
 
 .mobile-menu.show{
   transform:translateY(0);
+}
+
+/* MOBILE MENU */
+@media (max-width:900px){
+
+  .nav-links{
+    position:fixed;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#071410;
+    flex-direction:column;
+    padding:20px;
+    gap:18px;
+
+    transform:translateY(-150%);
+    transition:.3s;
+    z-index:998;
+  }
+
+  .nav-links.show{
+    transform:translateY(0);
+  }
+
+  .burger{
+    display:block;
+  }
 }
 
 

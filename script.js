@@ -155,3 +155,10 @@ const counterObserver = new IntersectionObserver(entries => {
 
 counters.forEach(c => counterObserver.observe(c));
 
+
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('show');
+}
+
+
+

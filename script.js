@@ -53,12 +53,11 @@ window.addEventListener('scroll', () => {
 const track = document.getElementById("slidesTrack");
 
 if(track){
-  const speed = 1.5;
+  const speed = window.innerWidth < 768 ? 2.5 : 1.5;
 
   function autoScroll(){
     track.scrollLeft += speed;
 
-    // когда дошли до половины — возвращаемся
     if(track.scrollLeft >= track.scrollWidth / 2){
       track.scrollLeft = 0;
     }
@@ -169,6 +168,7 @@ document.querySelectorAll('#navLinks a').forEach(link=>{
     document.getElementById('navLinks').classList.remove('show');
   });
 });
+
 
 
 

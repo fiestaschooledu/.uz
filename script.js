@@ -157,8 +157,10 @@ counters.forEach(c => counterObserver.observe(c));
 
 
 function toggleMenu(){
-  document.getElementById('mobileMenu').classList.toggle('show');
+  document.getElementById('navLinks').classList.toggle('show');
 }
+
+
 
 
 

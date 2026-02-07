@@ -159,6 +159,11 @@ counters.forEach(c => counterObserver.observe(c));
 function toggleMenu(){
   document.getElementById('navLinks').classList.toggle('show');
 }
+function toggleMenu(){
+  const nav = document.getElementById('navLinks');
+  nav.classList.toggle('show');
+}
+
 
 
 

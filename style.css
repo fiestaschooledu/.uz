@@ -975,4 +975,18 @@ a.btn-outline:visited {
   }
 }
 
+.nav-btn {
+  width: auto !important;
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: 12px;
+}
+@media (max-width:600px){
+  .nav-btn {
+    width: auto !important;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
 
